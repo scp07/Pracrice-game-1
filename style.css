@@ -1,0 +1,133 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+}
+body{
+    background-color: rgba(141, 68, 46, 0.74);
+}
+.d-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    max-width: 1150px;
+    width: 70%;
+    height: 100vh;
+    margin: auto;
+}
+.main-game-div{
+    margin: auto;
+    width: 900px;
+    height: 600px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+/* left side is here */
+.left-side{
+    width: 50%;
+    height: 100%;
+    left: 0;
+    background-color: rgb(185, 210, 210);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 50px;
+    position: absolute;
+    text-align: center;
+}
+/* right side is here */
+.right-side{
+    height: 100%;
+    right: 0px;
+    background-color: rgb(203, 222, 222);
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 50px;
+    position: absolute;
+    text-align: center;
+}
+h2{
+    font-size: 38px;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+.left p{
+    font-size: 50px;
+}
+/* middele part start from here */
+.main-div{
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80%;
+    width: 20%;
+    
+}
+.img{
+    height: 100px;
+    width: 100px;
+    margin-top: 50px;
+}
+.main-div img{
+   height: 100%;
+   width: 100%;
+   border-radius: 20px;
+}
+.button{
+    font-size: 22px;
+    border-radius: 10px;
+    padding: 5px 8px;
+    background-color: rgb(113, 163, 165);
+    border: none;
+}
+.button:hover{
+    border: 1px solid rgb(162, 219, 221);
+    color: cadetblue;
+    background-color: beige;
+}
+.right-score{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(105, 93, 93);
+    padding: 20px 10px;
+    border-radius: 10px;
+}
+.right-score h3{
+    font-size: 27px;
+    color: white;
+}
+.right-score p{
+    font-size: 27px;
+    font-weight: 500;
+    color: white;
+}
+/* color class */
+.hidden{
+    display: none;
+}
+.active{
+    background-color: rgb(144, 139, 139);
+    color: white;
+}
+.win{
+    background-color: black;
+    color: white;
+}

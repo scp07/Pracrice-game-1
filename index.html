@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <!-- there is a css link -->
+     <link rel="stylesheet" href="style.css">
+     <!-- google font link is here -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="container d-flex">
+        <div class="main-game-div">
+            <div class="right-side player--1 active">
+                <div class="left">
+                    <h2>PLAYER 2</h2>
+                    <p class="score--1">0</p>
+                </div>
+                <div class="right-score scoreSecond--1">
+                    <h3>CURRENT SCORE</h3>
+                    <p class="current--1" >0</p>
+                </div>
+            </div>
+            <!-- middel div -->
+            <div class="main-div">
+                <button class="button newGame">New Game</button>
+                <div class="img"><img src="photos/1die.png" id="img" alt="" class="index"></div>
+                <button class="button hold">HOLD</button>
+                <button class="diseButton button">ROLL DICE</button>
+            </div>
+            <!-- left side of div -->
+            <div class="left-side player--0">
+                <div class="left">
+                    <h2>PLAYER 1</h2>
+                    <p class="score--0">0</p>
+                </div>
+                <div class="right-score scoreSecond--0">
+                    <h3>CURRENT SCORE</h3>
+                    <p class="current--0">0</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- this is javascript link -->
+    <script src="game.js"></script>
+</body>
+</html>
